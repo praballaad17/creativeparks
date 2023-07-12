@@ -1,0 +1,346 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+#eiden {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  /* animation-name: move; */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 3em;
+  color: white;
+}
+
+/* @keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+} */
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.trust {
+  /* display: flex; */
+}
+.trust > img {
+  width: 200px;
+}
+
+.trust > h2 {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+.section2-box {
+  position: relative;
+}
+.section2 {
+  display: flex;
+  padding: 100px 100px;
+  align-items: center;
+}
+
+.section2-img {
+  padding: 50px;
+}
+
+.section2 > p {
+  color: gray;
+  line-height: 25px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.section2-over {
+  position: absolute;
+  top: 0;
+  background-color: aqua;
+}
+.text-bold {
+  font-weight: bold;
+  color: black;
+}
+.section2-head1 {
+  font-size: 200px;
+  color: rgb(231, 226, 226);
+
+  position: absolute;
+  top: 150px;
+  letter-spacing: 20px;
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+}
+
+.section2-head2 {
+  font-size: 200px;
+  color: rgb(231, 226, 226);
+  position: absolute;
+  top: 450px;
+  left: 200px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+.what {
+  background-color: black;
+  padding: 100px;
+}
+.what > h1 {
+  font-size: 75px;
+  color: black;
+  font-family: sans-serif;
+  -webkit-text-stroke: 2px white;
+}
+
+.what > h1 > span {
+  color: orange;
+  -webkit-text-stroke: 0;
+}
+
+.what > p {
+  color: gray;
+  font-size: 25px;
+}
+
+.what > p > span {
+  color: orange;
+  font-size: 25px;
+}
+
+.client {
+  background-color: black;
+  padding: 100px 100px;
+}
+.client > h1 {
+  color: white;
+}
+
+.testimony {
+}
+
+.testimony-orange {
+  color: orange;
+}
+
+.testimony > p {
+  color: gray;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.testimony-autor {
+  display: flex;
+}
+.testimony-autor > img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.testimony-name {
+  color: orange;
+  font-size: 25px;
+  font-weight: 600;
+}
+.testimony-box {
+  margin-left: 20px;
+}
+.testimony-box > p {
+  background-color: gray;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.line-box {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 70px;
+  background-color: black;
+  padding: 100px 0;
+}
+
+#line {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  -webkit-text-stroke: 2px white;
+  font-weight: 700;
+  font-size: 48px;
+  width: 100%;
+  /* line-height: 70px; */
+  animation: moveLine 50s linear infinite;
+  white-space: nowrap;
+}
+
+#line > span {
+  color: orange;
+  -webkit-text-stroke: 0;
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.block {
+  background-color: black;
+  display: inline-block;
+  padding: 10px;
+}
+
+.block-text {
+  text-decoration: none;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-text-stroke: 2px white;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.charges {
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charges > h1 {
+  font-size: 75px;
+  color: white;
+  font-family: sans-serif;
+  -webkit-text-stroke: 2px black;
+}
+
+.charges > p {
+  color: gray;
+  font-size: 18px;
+}
+.charges > h1 > span {
+  color: orange;
+  -webkit-text-stroke: 0;
+}
+.charges > h2 > span {
+  color: orange;
+}
+
+.charges > p > span {
+  color: orange;
+}
+
+.charges > div {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}
+
+.contact {
+  padding: 100px;
+  display: grid;
+  /* grid-column: 4; */
+  column-gap: 50px;
+  grid-template-columns: auto 400px 200px;
+  background-color: black;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-input {
+  border-bottom: 1px gray solid;
+  padding: 30px 0;
+}
+.contact-form > .contact-form-input > label {
+  font-weight: bold;
+}
+.contact-form > .contact-form-input > input {
+  padding-left: 10px;
+  background-color: black;
+  color: orange;
+  border: none;
+  font-size: 16px;
+}
+
+.contact-form > .contact-form-input > input:focus {
+  outline: none;
+  border-color: black;
+}
+
+.contact-form > .contact-form-input > textarea:focus {
+  outline: none;
+  border-color: black;
+}
+
+.contact-form > .contact-form-input > textarea {
+  background-color: black;
+  color: orange;
+  border: none;
+}
+.contact2 > h2 {
+  color: gray;
+}
+.contact-links {
+}
+
+.contact-links > ul > li {
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.footer {
+  /* width: 100vw;
+  height: 100vh; */
+  background-image: url(./landing-inner-pages-bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+.footer > h1 {
+  font-size: 75px;
+  color: white;
+}
+.footer-iconbox {
+  display: flex;
+}
+.footer-icon {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon:hover {
+  background-color: orange;
+  color: white;
+}
+
+.footer-bottom {
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
