@@ -1,18 +1,82 @@
 body {
   font-family: "Nunito", sans-serif;
 }
-#eiden {
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+.navbar > .links {
+  display: flex;
+}
+
+.navbar > .links > div {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar > .links > div.active {
+  color: orange;
+}
+.box {
+  background-image: url("./landing-top-bg-img-new.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   /* animation-name: move; */
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  font-size: 3em;
+  /* animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+  font-size: 200px;
   color: white;
+  text-transform: uppercase;
+  /* font-family: "Russo One", sans-serif; */
+  font-family: "Anton", sans-serif;
+  transition: transform 0.3s ease-out;
+  z-index: 3;
+  letter-spacing: 30px;
 }
+
+.text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -45%);
+  -webkit-text-stroke: 2px white;
+  font-size: 200px;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  transition: transform 0.3s ease-out;
+  z-index: 2;
+  letter-spacing: 30px;
+}
+
+.text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  -webkit-text-stroke: 2px white;
+  font-size: 200px;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  transition: transform 0.3s ease-out;
+  z-index: 1;
+  letter-spacing: 30px;
+}
+/* #movebox:hover .text {
+  transform: translate(-5px, -5px);
+} */
 
 /* @keyframes move {
   from {

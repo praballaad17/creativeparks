@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
@@ -25,8 +31,22 @@
     ></script>
   </head>
   <body>
+    <div class="navbar">
+      <img src="./logo-small.png" />
+
+      <div class="links">
+        <div class="active">Home</div>
+        <div>About Us</div>
+        <div>Solutions</div>
+        <div>Insustries We Serve</div>
+        <div class="">Career</div>
+        <div>Contact</div>
+      </div>
+    </div>
     <div id="movebox" class="box">
-      <div id="eiden">EIDEN</div>
+      <div class="text" id="eiden">EIDEN</div>
+      <div class="text1" id="eiden">EIDEN</div>
+      <div class="text2" id="eiden">EIDEN</div>
     </div>
 
     <div class="section2-box">
@@ -217,12 +237,16 @@
 
     <script>
       const movebox = document.querySelector("#movebox");
-      console.log(movebox);
+      const text = document.querySelector(".text");
       movebox.addEventListener("mouseover", (event) => {
         const x = event.clientX;
         const y = event.clientY;
-        console.log(x, y);
-        eiden.style.transform = `translate(${-x / 5}px, ${-y / 5}px)`;
+        const tx = event.screenX;
+        const ty = event.screenY;
+        console.log(x, y, tx, ty);
+        // text.style.transform = `translate(${(x / tx) * 100}px, ${
+        //   (y / ty) * 100
+        // }px)`;
       });
     </script>
   </body>
